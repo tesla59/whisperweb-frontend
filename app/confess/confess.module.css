@@ -1,7 +1,7 @@
 .input_form {
     padding: 16px;
     height: 100%;
-    color: cyan;
+    color: black;
 }
 
 .top_layer {
@@ -11,12 +11,19 @@
     display: flex;
 }
 
-.input_group{
+.input_group {
     display: flex;
     width: 25%;
     height: 3rem;
     padding: 36px;
     flex-direction: column;
+}
+
+#from,
+#to,
+#message {
+    background-color: #0b0558;
+    color: white;
 }
 
 .message_area {
