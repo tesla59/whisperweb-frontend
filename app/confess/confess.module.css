@@ -1,0 +1,42 @@
+.input_form {
+    padding: 16px;
+    height: 100%;
+    color: cyan;
+}
+
+.top_layer {
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    display: flex;
+}
+
+.input_group{
+    display: flex;
+    width: 25%;
+    height: 3rem;
+    padding: 36px;
+    flex-direction: column;
+}
+
+.message_area {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.submit_button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+}
+
+.submit_button:hover {
+    background-color: #45a049;
+}
