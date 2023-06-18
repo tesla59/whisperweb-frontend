@@ -41,9 +41,12 @@ body {
 }
 
 .home-button {
+  margin-left: 15%;
+}
+
+.home-button button {
   display: inline-block;
   padding: 10px 20px;
-  margin-left: 10%;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -55,10 +58,10 @@ body {
   height: 64px;
 }
 
-.home-button:hover {
+.home-button button:hover {
   background-color: #0056b3;
 }
 
-.home-button:active {
+.home-button button:active {
   background-color: #003d80;
 }

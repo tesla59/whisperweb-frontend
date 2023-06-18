@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -8,9 +9,11 @@ export default function Home() {
           <p style={{ fontSize: '4rem', color: 'orange' }}>Welcome to WhisperWeb</p>
           Wanna confess something?
         </div>
-        <button className='home-button'>
-          Lets Go
-        </button>
+        <Link href={'/confess'} className='home-button'>
+          <button>
+            Lets Go
+          </button>
+        </Link>
       </div>
     </>
   )
