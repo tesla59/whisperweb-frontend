@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.upper_text {
+    margin-top: 40%;
+    color: orange;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.lower_text {
+    font-size: 2rem;
+    color: #000080;
+}

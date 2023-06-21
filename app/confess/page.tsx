@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import styles from './confess.module.css'
+import { useRouter } from 'next/navigation';
 
 export default function Confess() {
     const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ export default function Confess() {
         to: '',
         message: ''
     });
+    const router = useRouter();
+
     const handleChange = (e: any) => {
         const fieldName = e.target.name;
         const fieldValue = e.target.value;
@@ -33,6 +36,7 @@ export default function Confess() {
             if (!response.ok) {
                 console.error('Form submission failed');
             }
+            router.push("/thankyou")
         } catch (error) {
             console.error('Error submitting form', error);
         }
