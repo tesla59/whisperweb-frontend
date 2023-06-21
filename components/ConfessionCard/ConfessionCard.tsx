@@ -1,3 +1,5 @@
+import styles from './ConfessionCard.module.css'
+
 interface Props {
     to: string
     from: string
@@ -6,10 +8,10 @@ interface Props {
 
 export default function ConfessionCard({ to, from, message }: Props) {
     return (
-        <>
-            To: {to}
-            From: {from}
-            Message: {message}
-        </>
+        <div className={styles.card}>
+            <div className={styles.to}>To: {to} </div>
+            <div className={styles.from}>From: {from} </div>
+            <div className={styles.message}>Message: {message} </div>
+        </div>
     )
 }
