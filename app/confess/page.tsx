@@ -18,9 +18,24 @@ export default function Confess() {
             [fieldName]: fieldValue
         }));
     }
-    const handleSubmit = (e: { preventDefault: () => void; }) => {
+    const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         // todo: Handle form submission logic here
+        try {
+            const response = await fetch('http://localhost:5000/api/v1/confession/new', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (!response.ok) {
+                console.error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Error submitting form', error);
+        }
     };
 
     return (
