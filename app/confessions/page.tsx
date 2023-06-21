@@ -1,6 +1,6 @@
 import ConfessionCard from "@/components/ConfessionCard/ConfessionCard";
 import styles from './confessions.module.css';
-import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface Confession {
     id: string;
@@ -27,7 +27,9 @@ export default async function Confessions() {
     const renderConfessions = () => {
         return confessions.map((confession) => (
             <div className={styles.confession} key={confession.id}>
-                <ConfessionCard to={confession.to} from={confession.from} message={confession.message} />
+                <Link href={"/confession/" + confession.id}>
+                    <ConfessionCard to={confession.to} from={confession.from} message={confession.message} />
+                </Link>
             </div>
         ));
     };
