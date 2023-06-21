@@ -1,0 +1,23 @@
+.confession_list {
+    padding: 24px;
+}
+
+.title {
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+}
+
+.confession_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.confession {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+}
