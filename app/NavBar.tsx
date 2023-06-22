@@ -10,6 +10,12 @@ export default function NavBar() {
             </Link>
             <ul className={styles.links}>
                 <li>
+                    <Link href={"/"}>Home</Link>
+                </li>
+                <li>
+                    <Link href={"/confess"}>Confess</Link>
+                </li>
+                <li>
                     <Link href={"/confessions"}>Confessions</Link>
                 </li>
                 <li>
